@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    https://www.youtube.com/watch?v=JjfSjMs0ImQ
+    START
+    -->
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person"/>
+
+    <item
+        android:id="@+id/jobs"
+        android:title="Jobs"
+        android:icon="@drawable/org_jobs"/>
+
+    <item
+        android:id="@+id/applications"
+        android:title="Applications"
+        android:icon="@drawable/org_applications"/>
+
+    <item
+        android:id="@+id/interviews"
+        android:title="Interviews"
+        android:icon="@drawable/ic_timetable"/>
+
+    <item
+        android:id="@+id/reports"
+        android:title="Reports"
+        android:icon="@drawable/ic_lightbulb"/>
+
+
+    <!--
+        END
+        -->
+</menu>

@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ApplicationCV">
+
+
+            <TextView
+                android:id="@+id/tvApplicantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/primaryColor"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="Email"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvApplicantName" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="Phone"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+            <TextView
+                android:id="@+id/tvWorkHistory1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/work_history_1"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+            <TextView
+                android:id="@+id/tvPosition1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/position"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWorkHistory1" />
+
+            <TextView
+                android:id="@+id/tvOrganisation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/organisation"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPosition1" />
+
+            <TextView
+                android:id="@+id/tvNoYears1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/number_of_years"
+
+                android:textSize="18sp"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrganisation1" />
+
+            <TextView
+                android:id="@+id/tvDuties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/duties"
+
+                android:textSize="18sp"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNoYears1" />
+
+            <EditText
+                android:id="@+id/etPosition1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/tvWorkHistory1" />
+
+            <EditText
+                android:id="@+id/etOrg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="500dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etPosition1" />
+
+            <EditText
+                android:id="@+id/etNoYears1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="500dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etOrg1" />
+
+            <EditText
+                android:id="@+id/etDuties1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="500dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etNoYears1" />
+
+            <TextView
+                android:id="@+id/tvTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+
+                android:text="@string/work_history_2"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDuties1" />
+
+            <TextView
+                android:id="@+id/tvPosition2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:text="@string/position"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle2" />
+
+            <TextView
+                android:id="@+id/tvOrganisation2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+
+                android:textSize="18sp"
+                android:text="@string/organisation"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPosition2" />
+
+            <TextView
+                android:id="@+id/tvNoYears2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="18sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/number_of_years"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrganisation2" />
+
+            <TextView
+                android:id="@+id/tvDuties2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="@string/duties"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNoYears2" />
+
+            <EditText
+                android:id="@+id/etPosition2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle2" />
+
+            <EditText
+                android:id="@+id/etOrg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etPosition2" />
+
+            <EditText
+                android:id="@+id/etNoYears2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etOrg2" />
+
+            <EditText
+                android:id="@+id/etDuties2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etNoYears2" />
+
+            <TextView
+                android:id="@+id/tvEducation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+
+                android:text="@string/education_history_1"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDuties2" />
+
+            <TextView
+                android:id="@+id/tvInstitution1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/institution"
+
+                android:textSize="18sp"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEducation1" />
+
+            <TextView
+                android:id="@+id/tvCertification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:text="@string/certification"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstitution1" />
+
+            <EditText
+                android:id="@+id/etInstitution1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/tvEducation1" />
+
+            <EditText
+                android:id="@+id/etCertification1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@id/etInstitution1" />
+
+            <TextView
+                android:id="@+id/tvEducation2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="64dp"
+                android:text="@string/education_history_2"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etCertification1" />
+
+            <TextView
+                android:id="@+id/tvInstitution2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"
+                android:text="@string/institution"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEducation2" />
+
+            <TextView
+                android:id="@+id/tvCertification2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+
+                android:textSize="18sp"
+                android:text="@string/certification"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstitution2" />
+
+            <EditText
+                android:id="@+id/etInstitution2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/tvEducation2" />
+
+            <EditText
+                android:id="@+id/etCertification2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@id/etInstitution2" />
+
+
+            <TextView
+                android:id="@+id/tvSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/skills"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCertification2" />
+
+            <EditText
+                android:id="@+id/etSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="500dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etCertification2" />
+
+            <TextView
+                android:id="@+id/tvAwards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="48dp"
+                android:text="@string/awards"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSkills" />
+
+            <EditText
+                android:id="@+id/etAwards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="500dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etSkills" />
+
+            <TextView
+                android:id="@+id/tvPublications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/publications"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAwards" />
+
+            <EditText
+                android:id="@+id/etPublications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="500dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etAwards" />
+
+            <TextView
+                android:id="@+id/tvInterests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="42dp"
+                android:text="@string/interests"
+
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPublications" />
+
+            <EditText
+                android:id="@+id/etInterests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="500dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etPublications" />
+
+            <TextView
+                android:id="@+id/tvAdditional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="32dp"
+
+                android:text="@string/additional"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInterests" />
+
+            <EditText
+                android:id="@+id/etAdditional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/inputTextColor"
+                android:textSize="14sp"
+                android:layout_marginStart="500dp"
+                app:layout_constraintStart_toEndOf="@+id/tvPosition1"
+                app:layout_constraintTop_toBottomOf="@+id/etInterests" />
+
+            <ImageButton
+                android:id="@+id/btnInterview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@android:color/white"
+                android:src="@drawable/org_timetable"
+                android:textColor="@color/primaryTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvApplicantName"
+                app:srcCompat="@drawable/org_email" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!--
+https://www.youtube.com/watch?v=JjfSjMs0ImQ
+START
+-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        app:itemBackground="@color/primaryColor"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/org_nav" />
+
+    <!--
+        END
+        -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

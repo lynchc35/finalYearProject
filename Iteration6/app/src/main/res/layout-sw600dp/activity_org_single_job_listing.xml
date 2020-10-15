@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".OrgSingleJobListing">
+
+            <TextView
+                android:id="@+id/tvJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="32dp"
+                android:text="Job Listing"
+                android:textColor="@color/primaryColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/role_title"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvJob"/>
+
+            <EditText
+                android:id="@+id/etRoleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/enter_role_title"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/location_label"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etRoleTitle" />
+
+            <Spinner
+                android:id="@+id/spLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/enter_location"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/inputTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+            <TextView
+                android:id="@+id/tvRoleRequirements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/role_requirements"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spLocation" />
+
+            <EditText
+                android:id="@+id/etRequirements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/enter_role_requirements"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/inputTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRoleRequirements" />
+
+            <TextView
+                android:id="@+id/tvDuties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/role_duties"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etRequirements" />
+
+            <EditText
+                android:id="@+id/etRoleDuties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/enter_role_duties"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/inputTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDuties" />
+
+            <TextView
+                android:id="@+id/tvSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="24dp"
+                android:text="Salary: (€)"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etRoleDuties" />
+
+            <EditText
+                android:id="@+id/etSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/enter_salary"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/inputTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSalary" />
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="788dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@android:color/white"
+                android:src="@drawable/org_edit"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/etRoleTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvJob" />
+
+            <ImageButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="800dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/white"
+                android:src="@drawable/org_floppy"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/etRoleTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvJob" />
+
+            <TextView
+                android:id="@+id/tvListingStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="24dp"
+                android:labelFor="@id/spStatus"
+                android:text="@string/listing_status"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSalary" />
+
+            <Spinner
+                android:id="@+id/spStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvListingStatus" />
+
+            <ImageButton
+                android:id="@+id/btnViewApplications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="800dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/white"
+                android:src="@drawable/org_applications"
+                android:text="@string/applications"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/etRoleTitle"
+                app:layout_constraintTop_toBottomOf="@+id/btnEdit" />
+
+            <ImageButton
+                android:id="@+id/btnViewInterviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="800dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/white"
+                android:src="@drawable/org_timetable"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/etRoleTitle"
+                app:layout_constraintTop_toBottomOf="@+id/btnViewApplications" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!--
+https://www.youtube.com/watch?v=JjfSjMs0ImQ
+START
+-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        app:itemBackground="@color/primaryColor"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/org_nav" />
+
+    <!--
+        END
+        -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

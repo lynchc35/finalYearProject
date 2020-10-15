@@ -1,0 +1,24 @@
+<!-- https://mkyong.com/android/android-prompt-user-input-dialog-example/-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disclosure: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your age, address, and reason for taking a career break will not be shared with employers. These details will be used solely for anonymised aggregated reports to employers."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+</LinearLayout>

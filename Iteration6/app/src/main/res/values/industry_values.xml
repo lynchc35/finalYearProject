@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="industry_values">
+        <item>Nursing</item>
+        <item>Clerical</item>
+        <item>Technology</item>
+        <item>Accounting</item>
+        <item>Consulting</item>
+        <item>Retail</item>
+        <item>Education</item>
+        <item>Medical</item>
+        <item>Hospitality</item>
+        <item>Other</item>
+    </string-array>
+</resources>

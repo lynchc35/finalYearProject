@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_values">
+        <item>Cork</item>
+        <item>Dublin</item>
+        <item>Galway</item>
+        <item>Limerick</item>
+        <item>Kerry</item>
+        <item>Other</item>
+    </string-array>
+</resources>
